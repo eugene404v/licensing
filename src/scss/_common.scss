@@ -19,3 +19,12 @@ h2 {
     font-size: 12px;
     font-weight: 500;
 }
+
+.svg-parent {
+    & .svg path {
+        fill: var(--color-accent);
+    }
+    &:hover .svg path {
+        fill: #fff;
+    }
+}

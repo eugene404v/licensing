@@ -1,11 +1,52 @@
 .btn {
     min-width: 130px;
     min-height: 43px;
+    width: fit-content;
+    padding: 0 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     border: none;
-    background: linear-gradient(94.19deg, #FF9C55 -11.33%, rgba(243, 110, 15, 0) 124.32%), #F36E0F;
+    background: var(--gradient-button);
     box-shadow: 0px 6px 8px #FFD5B7;
     border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+        transition: .2s;
+        box-shadow: none;
+        background: var(--color-accent);
+    }
+
+    &:disabled {
+        background: var(--color-disabled);
+        box-shadow: none;
+    }
+
+    &--large {
+        min-width: 144px;
+        min-height: 51px;
+    }
+
+    &--outlined {
+        min-width: 111px;
+        min-height: 38px;
+        border: 1px solid #B0B0B0;
+        background: #fff;
+        color: var(--color-accent);
+        box-shadow: none;
+
+        &:hover {
+            border: 1px solid #F36E0F;
+            background: #fff;
+        }
+
+        &:disabled {
+            color: var(--color-disabled);
+            background: #fff;
+            border: 1px solid #B0B0B0;
+        }
+    }
 }

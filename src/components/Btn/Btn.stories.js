@@ -11,21 +11,20 @@ const Template = args => <Btn {...args} ></Btn>;
 
 export const Default = Template.bind({});
 Default.args = {
-  text: 'wwwwwwwwww'
+  text: 'Сохранить'
 };
 
-export const Pinned = Template.bind({});
-Pinned.args = {
-  task: {
-    ...Default.args.task,
-    state: 'TASK_PINNED',
-  },
+export const Large = Template.bind({});
+Large.args = {
+    ...Default.args,
+    text: 'Войти',
+    additionalClassnames: 'btn--large'
 };
 
-export const Archived = Template.bind({});
-Archived.args = {
-  task: {
+export const Outlined = Template.bind({});
+Outlined.args = {
     ...Default.args.task,
-    state: 'TASK_ARCHIVED',
-  },
+    text: 'Отмена',
+    additionalClassnames: 'btn--outlined'
+
 };

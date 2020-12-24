@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 import './Btn.scss'
 
-function Btn({text, additionalClassnames, onClick}) {
+function Btn({text, additionalClassnames, onClick, disabled}) {
     return (
-        <button className={`btn ${additionalClassnames||''}`} onClick={onClick}>
+        <button className={`btn ${additionalClassnames||''}`} onClick={onClick} disabled={disabled}>
             {text}
         </button>
     )
@@ -13,7 +13,8 @@ function Btn({text, additionalClassnames, onClick}) {
 
 export default Btn
 
-Btn.PropTypes = {
+Btn.propTypes = {
     text: PropTypes.string,
     additionalClassnames: PropTypes.string,
+    disabled: PropTypes.bool
 }
