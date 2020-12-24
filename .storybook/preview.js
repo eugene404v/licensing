@@ -1,4 +1,4 @@
-import '../src/index.css';
+import '../src/App.scss';
 
 
 export const parameters = {

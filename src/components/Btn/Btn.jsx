@@ -5,7 +5,7 @@ import './Btn.scss'
 
 function Btn({text, additionalClassnames, onClick}) {
     return (
-        <button className={`btn ${additionalClassnames}`} onClick={onClick}>
+        <button className={`btn ${additionalClassnames||''}`} onClick={onClick}>
             {text}
         </button>
     )

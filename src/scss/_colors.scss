@@ -1,0 +1,17 @@
+:root {
+    --color-font: #4C4D52;
+    --color-primary: #f00;
+    --color-accent: #F36E0F;
+    --color-menu-icon: #F68D43;
+    --color-incorrect: #F4281A;
+    --color-correct: #28C554;
+    --color-disabled: #C8C8C8;
+    --color-input-name: #A3A3A3;
+    --color-popup-bg: #F8F9FA;
+
+
+    --gradient-button: linear-gradient(94.19deg, #FF9C55 -11.33%, rgba(243, 110, 15, 0) 124.32%), #F36E0F; 
+    --gradient-widget-progress: linear-gradient(156.03deg, rgba(254, 145, 0, 0) -2.05%, #FFBE18 108.97%), #FE9100; 
+    --gradient-widget-new: linear-gradient(150.67deg, rgba(0, 208, 254, 0) 1.54%, #18BAFF 118.46%), #55B3D7;
+    --gradient-widget-done: linear-gradient(151.61deg, rgba(25, 169, 134, 0.42) 1.51%, #0FBA87 107.04%), #1CE490;
+}

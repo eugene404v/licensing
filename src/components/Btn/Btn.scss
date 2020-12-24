@@ -1,5 +1,11 @@
-button {
-    width: 100px;
-    height: 200px;
-    background-color: red;
+.btn {
+    min-width: 130px;
+    min-height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: linear-gradient(94.19deg, #FF9C55 -11.33%, rgba(243, 110, 15, 0) 124.32%), #F36E0F;
+    box-shadow: 0px 6px 8px #FFD5B7;
+    border-radius: 8px;
 }
