@@ -21,11 +21,3 @@ Plus.args = {
     text: 'Создать реестр',
     btnIcon: 'plus'
 };
-
-export const Outlined = Template.bind({});
-Outlined.args = {
-    ...Default.args.task,
-    text: 'Отмена',
-
-
-};
