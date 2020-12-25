@@ -29,4 +29,17 @@
             background: var(--color-accent);
         }
     }
+
+    &:disabled { 
+       & .btn-prefix__text {
+            color: var(--color-disabled);
+        }
+        & .btn-prefix__icon {
+            background: var(--color-disabled);
+            & .svg path {
+                fill: #fff;
+            }
+        }
+        
+    }
 }

@@ -1,0 +1,9 @@
+.ant-switch-checked {
+    background-color: var(--color-accent);
+}
+
+.switch {
+    &__label {
+        margin-left: 15px;
+    }
+}

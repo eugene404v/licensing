@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {AddWidgetIcon, PlusIcon} from 'icons'
 import './BtnPrefix.scss'
 
-function BtnPrefix({aditionalClassnames, text, onClick, btnIcon}) {
+function BtnPrefix({aditionalClassnames, text, onClick, btnIcon, disabled}) {
     const iconSwitcher = () => {
         switch(btnIcon) {
             case 'addWidget': return <AddWidgetIcon />
@@ -13,7 +13,7 @@ function BtnPrefix({aditionalClassnames, text, onClick, btnIcon}) {
     }
 
     return (
-        <button className={`btn-prefix svg-parent ${aditionalClassnames || ''}`} onClick={onClick}>
+        <button className={`btn-prefix svg-parent ${aditionalClassnames || ''}`} onClick={onClick} disabled={disabled}>
             <div className="btn-prefix__icon">{iconSwitcher()}</div>
             <div className="btn-prefix__text">{text}</div>
         </button>
@@ -26,5 +26,6 @@ BtnPrefix.propTypes = {
     text: PropTypes.string,
     additionalClassnames: PropTypes.string,
     disabled: PropTypes.bool,
-    btnIcon: PropTypes.string
+    btnIcon: PropTypes.string,
+    onClick: PropTypes.func
 }
