@@ -7,3 +7,12 @@
 .ant-radio-inner::after {
     background-color: var(--color-accent);
 }
+
+.ant-radio-wrapper {
+    line-height: 1;
+}
+
+.radio {
+    display: flex;
+    align-items: center;
+}

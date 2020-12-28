@@ -1,0 +1,37 @@
+.btn-icon {
+    border: 0.5px solid var(--color-accent);
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover .svg path {
+        fill: var(--color-accent);
+    }
+
+    &:disabled {
+        border: 0.5px solid var(--color-disabled);
+        & .svg path {
+            fill: var(--color-disabled);
+        }    
+    }
+
+    &--filled {
+        background-color: var(--color-accent);
+        & .svg path,
+        &:hover .svg path  {
+            fill: #fff;
+        }
+        &:disabled {
+            background-color: var(--color-disabled);
+            & .svg path {
+                fill: #fff;
+            }
+        }
+    }
+}

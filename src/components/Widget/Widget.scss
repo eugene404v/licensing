@@ -1,0 +1,40 @@
+.widget {
+    position: relative;
+    width: 225px;
+    height: 213px;
+    border-radius: 10px;
+    padding: 15px;
+    &--inprogress {
+        background: var(--gradient-widget-progress);
+    }
+    &--new {
+        background: var(--gradient-widget-new);
+    }
+    &--done {
+        background: var(--gradient-widget-done);
+    }
+    &__corner {
+        cursor: grab;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        &:active {
+            cursor: grabbing;
+        }
+    }
+    &__bg-line {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+    }
+    &__count {
+        font-weight: 500;
+        font-size: 80px;
+        color: #fff;
+    }
+}
