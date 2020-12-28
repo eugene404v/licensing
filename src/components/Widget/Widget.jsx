@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import './Widget.scss'
 import {WidgetCorner} from 'icons'
 
+
 const BgLineSvg = ({fillShadow, fillCircle}) => {
     return (
         <svg width="207" height="80" viewBox="0 0 207 80" fill="none" xmlns="http://www.w3.org/2000/svg" className='widget__bg-line'>

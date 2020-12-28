@@ -1,0 +1,25 @@
+.bread {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__home {
+        & path {
+            fill: var(--color-accent);
+        }
+        &:hover {
+            & path {
+                fill: var(--color-accent);
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding-left: 25px;
+        &:before {
+            content: '/';
+            position: absolute;
+            left: 10px;
+        }
+    }
+}

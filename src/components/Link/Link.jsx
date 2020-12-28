@@ -6,14 +6,17 @@ import './Link.scss'
 
 function Link({additionalClassnames, to, text}) {
     return (
-        <RouterLink to={to} className={`link ${additionalClassnames}`}>{text}</RouterLink>
+        <RouterLink to={to} className={`link ${additionalClassnames||''}`}>{text}</RouterLink>
     )
 }
 
 export default Link
 
 Link.propTypes = {
-    text: PropTypes.string,
+    text: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.element
+    ]),
     additionalClassnames: PropTypes.string,
     to: PropTypes.string
 }

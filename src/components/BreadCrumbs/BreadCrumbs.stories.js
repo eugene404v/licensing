@@ -1,21 +1,28 @@
 import React from 'react';
 
-import Widget from './Widget';
-import WidgetCircle from './WidgetCircle'
+import BreadCrumbs from './BreadCrumbs';
+
 
 export default {
-  component: Widget,
-  title: 'Widget',
+  component: BreadCrumbs,
+  title: 'BreadCrumbs',
 };
 
-const Template = args => <Widget {...args} ></Widget>;
+const Template = args => <BreadCrumbs {...args} ></BreadCrumbs>;
 
 export const Default = Template.bind({});
 Default.args = {
-    cornerFill: '#fff',
-    type: 'inProgress',
-    title: 'Сейчас в работе:',
-    count: 52
+    crumbs: [
+        {
+            to: '/1',
+            text: 'library'
+        },
+        {
+            to: '1/2',
+            text: 'assets'
+        }
+    ],
+    lastItem: 'current'
 };
 
 export const New = Template.bind({});
@@ -37,6 +44,6 @@ Circle.args = {
     ...Default.args,
     title: 'Выполнено:',
     type: 'circle',
-    children: <WidgetCircle />
+
 };
 
